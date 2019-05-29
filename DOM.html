@@ -1,0 +1,54 @@
+<!DOCTYPE<!DOCTYPE html>
+<html>
+<head>
+	<title>document object model</title>
+</head>
+<body>
+		<h1 id="head">This is head</h1>
+		<h2 class="intro">This is head2 </h2>
+		<hr>
+		<p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<hr>
+		<p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<ul>
+			<li>code</li>
+			<li>eat</li>
+			<li>sleep</li>
+		</ul>
+		<script type="text/javascript">
+			var head=document.getElementById("head");
+			head.innerHTML='sahil';
+			console.log(head)
+				var	paratags=document.getElementsByTagName('p');
+				console.log(paratags);
+				console.log(paratags[0]);
+				console.log(paratags[1]);
+
+				var paragraph=paratags[0];
+				paragraph.innerHTML="this is first paragraph";
+				console.log(paragraph);
+
+				
+				//applying css to html elements
+				//elementyle.backgroundcolor
+				var paragraph2=document.getElementById("para2");
+				paragraph2.style.backgroundColor="red";
+		</script>
+
+
+
+
+
+
+
+</body>
